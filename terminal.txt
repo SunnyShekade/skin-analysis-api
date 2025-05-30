@@ -1,0 +1,15 @@
+terminal commands - 
+
+pip install Flask
+pip install torch torchvision  # For PyTorch
+# or
+pip install keras  # For Keras
+# or
+pip install jax jaxlib  # For JAX
+
+pip install flask-cors
+
+pip show flask-cors
+
+after this we can application - python app.py
+

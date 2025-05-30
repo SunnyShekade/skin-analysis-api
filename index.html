@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="headline">Welcome to the Beauty Industry</h1>
+    
+    <div class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Username/Email ID" required id="username">
+                <input type="password" placeholder="Password" required id="password">
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+        </div>
+
+        <div class="form-container" id="signupContainer" style="display: none;">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email ID" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="login-button">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+    </div>
+        <form id="skinAnalysisForm">
+            <input type="file" accept="image/*" required id="imageUpload" style="display: none;">
+            <label for="imageUpload" id="fileLabel" class="file-label">Choose File</label>
+            <img id="uploadedImage" src="" alt="Uploaded Image" style="display: none; max-width: 200px; margin-top: 10px;">
+            <button type="submit" class="login-button">Analyze Skin</button>
+        </form>
+        
+        <div id="results" style="display: none; margin-top: 20px; border: 1px solid #1a1919; padding: 10px;">
+            <h2>Analysis Results</h2>
+            <ul id="skinMetrics">
+                <!-- Skin metrics will be populated here as list items -->
+            </ul>
+            <h3>Recommended Products</h3>
+            <ul id="productRecommendations"></ul>
+            <div id="instructions" style="margin-top: 10px;">
+                <h4>Instructions:</h4>
+                <p>Based on your skin analysis, here are some recommendations:</p>
+                <ul>
+                    <li>Use a gentle cleanser to maintain skin health.</li>
+                    <li>Apply moisturizer daily to keep your skin hydrated.</li>
+                    <li>Consider using sunscreen to protect against UV rays.</li>
+                    <li>Consult a dermatologist for personalized advice.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: skin-analysis-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    repo: https://github.com/SunnyShekade/skin-analysis-api
+    branch: main
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 10000

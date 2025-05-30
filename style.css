@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: 
+        url('img1.jpeg'), 
+        url('img2.jpeg'), 
+        url('img3.jpeg'), 
+        url('img4.jpeg');
+    background-size: 
+        50%, 
+        50%, 
+        50%, 
+        50%;
+    background-position: 
+        left top, 
+        right top, 
+        left bottom, 
+        right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white; /* Default text color to white */
+}
+
+.headline {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Headline color set to white */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: rgba(125, 216, 232, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-button {
+    background-color: blue;
+    color: rgb(251, 239, 239);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: darkblue;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.services-section {
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: add background for contrast */
+    padding: 20px;
+}
+
+.services-section h2 {
+    margin-bottom: 20px;
+}
+
+.services-section ul {
+    list-style-type: none;
+    padding: 10px; /* Specify a value for padding */
+}
+
+#results {
+    background-color: hsl(306, 80%, 50%);
+    border: 1px solid #4ed8f4;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#results h2 {
+    color: #333;
+}
+
+#results p {
+    font-size: 16px;
+}
+
+#results ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Additional styles for the skin analysis page */
+.file-label {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(125, 216, 232, 0.8);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#uploadedImage {
+    display: block;
+    margin-top: 10px;
+    max-width: 200px;
+}

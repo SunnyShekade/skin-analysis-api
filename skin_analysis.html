@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="headline">Skin Quality Analysis</h1>
+    
+    <div class="container">
+        <form id="skinAnalysisForm">
+            <input type="file" accept="image/*" required id="imageUpload" style="display: none;">
+            <label for="imageUpload" id="fileLabel" class="file-label">Choose File</label>
+            <img id="uploadedImage" src="" alt="Uploaded Image" style="display: none; max-width: 200px; margin-top: 10px;">
+            <button type="submit" class="login-button">Analyze Skin</button>
+        </form>
+        
+        <div id="results" style="display: none; margin-top: 20px; border: 1px solid #1a1919; padding: 10px;">
+            <h2>Analysis Results</h2>
+            <p id="skinMetrics"></p>
+            <h3>Recommended Products</h3>
+            <ul id="productRecommendations"></ul>
+            <div id="instructions" style="margin-top: 10px;">
+                <h4>Instructions:</h4>
+                <p>Based on your skin analysis, here are some recommendations:</p>
+                <ul>
+                    <li>Use a gentle cleanser to maintain skin health.</li>
+                    <li>Apply moisturizer daily to keep your skin hydrated.</li>
+                    <li>Consider using sunscreen to protect against UV rays.</li>
+                    <li>Consult a dermatologist for personalized advice.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="skin_analysis.js"></script>
+
+</body>
+</html>
